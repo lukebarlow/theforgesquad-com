@@ -1,0 +1,159 @@
+<html>
+<head>
+
+<style>
+
+BODY {
+    background-color:black;
+}
+
+.main {
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:80px;
+    background-image:url(images/background.jpg);
+    width:714px;
+    height:525px;
+}
+
+.content {
+    margin:20px;
+    width:534px;
+    height:485px;
+    font-family:arial;
+    text-align:center;
+    display:none;
+}
+
+.thumbnails {
+    margin:20px;
+    margin-left:0px;
+    width:118px;
+    height:485px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+
+.thumbnails > IMG {
+   cursor: pointer;
+   padding-bottom:15px;
+}
+
+
+
+#info {
+    text-align:left;
+    display:none;
+    margin:20px;
+    width:534px;
+    height:485px;
+    display:block;
+    font-family:arial;
+    
+}
+
+
+</style>
+
+<script>
+
+function showImage(name){
+    var e = document.getElementById('content')
+    e.innerHTML = '<img src="images/' + name + '.jpg" />'
+    e.style.display = 'block'
+    var info = document.getElementById('info')
+    info.style.display = 'none'
+}
+
+function showText(){
+    var e = document.getElementById('content')
+    e.style.display = 'none'
+    var info = document.getElementById('info')
+    info.style.display = 'block'
+}
+
+</script>
+
+</head>
+<body>
+
+
+<div class="main">
+
+    <table cellpadding="0" cellspacing="0">
+    <tr>
+    <td>
+        
+        <div id="info">
+        <div style="padding:20px;width:380px">
+        <b style="font-size:14pt;color:silver">The Forge Squad</b>
+<p>Working with metal, wood and stone I produce uniquely designed artistic and practical pieces for interior and exterior.</p>
+<p>All are made to suit the design requirments and personel tastes of the individual client.</p>
+<p>My product range are all expertly made to last you a life time. These include gates, railings, balconies, wood stoves, candlesticks, garden furniture etc...</p>
+<p>I will consider all types of commisioned projects, and am happy to discuss ideas or queries that people may have</p>
+<p>Call Finn on (+44) 07776 305628, (+44) 01556 640511 or write to <a href="mailto:finnbarlow@hotmail.co.uk">finnbarlow@hotmail.co.uk</a></p>
+         </div>
+         </div>
+        
+ 
+        <div class="content" id="content">
+        
+        
+        
+            
+            
+        </div>        
+        
+    </td>
+    <td>
+        <div class="thumbnails">
+
+        <img src="thumbnails/cow_and_sheep.jpg" onclick="showImage('cow_and_sheep')" />
+        <br />
+        <img src="thumbnails/two_birds.jpg" onclick="showImage('two_birds')" />
+        <br />
+        <img src="thumbnails/two_candles.jpg" onclick="showImage('two_candles')" />
+        <br />
+        <img src="thumbnails/front_curl_stove.jpg" onclick="showImage('front_curl_stove')" />
+        <br />
+        
+        <img src="thumbnails/two_leg_stool.jpg" onclick="showImage('two_leg_stool')" />
+        <br />
+        <img src="thumbnails/one_leg_stool.jpg" onclick="showImage('one_leg_stool')" />
+        <br />
+        <img src="thumbnails/red_stove.jpg" onclick="showImage('red_stove')" />
+        <br />
+        <img src="thumbnails/trolley_with_handle.jpg" onclick="showImage('trolley_with_handle')" />
+        <br />
+        <img src="thumbnails/stone.jpg" onclick="showImage('stone')" />
+        <br />
+        <img src="thumbnails/small_blue_gate.jpg" onclick="showImage('small_blue_gate')" />
+        <br />
+        <img src="thumbnails/gate_panorama.jpg" onclick="showImage('gate_panorama')" />
+        <br />
+        <img src="thumbnails/blue_gate.jpg" onclick="showImage('blue_gate')" />
+        <br />
+        <img src="thumbnails/glenshinnoch.jpg" onclick="showImage('glenshinnoch')" />
+        <br />
+        <img src="thumbnails/forge.jpg" onclick="showImage('forge')" />
+        <br />
+        <img src="thumbnails/green_earmuffs.jpg" onclick="showImage('green_earmuffs')" />
+        <br />
+        <img src="thumbnails/balcony.jpg" onclick="showImage('balcony')" />
+        <br />
+        <img src="thumbnails/text.jpg" onclick="showText()" />
+        <br />
+        </div>
+    </td>
+    </tr>
+    </table>
+
+    
+
+    
+
+</div>
+
+
+</body>
+</html>
